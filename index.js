@@ -14,7 +14,7 @@ polka()
   // .use(one, two)
   .get('/', (req, res) => {
     console.log('root');
-    res.end('root');
+    res.end('got to root');
   })
   .get('/:inst/:command', (req, res) => {
     res.end('Hello');
