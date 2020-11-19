@@ -1,0 +1,10 @@
+{
+  "name": "node-polka-docker",
+  "version": "1.0.0",
+  "description": "docker file for a node polka server",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "polka": "^0.5.2"
+  }
+}
