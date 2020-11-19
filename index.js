@@ -12,10 +12,13 @@ function two(req, res, next) {
 
 polka()
   // .use(one, two)
+  .get('/', (req, res) => {
+    console.log('root');
+    res.end('root');
+  })
   .get('/:inst/:command', (req, res) => {
-	  console.log('root');
-	  res.end('Hello');
-	  console.log(req.params);
+    res.end('Hello');
+    console.log(req.params);
   })
   .get('/users/:id', (req, res) => {
     console.log(`~> Hello, ${req.hello}`);
